@@ -8,4 +8,6 @@ setup(
     author="Samuel Genheden",
     author_email="samuel.genheden@gmail.com",
     packages=["rdkit_wrapper"],
+    install_requires=["black"],
+    entry_points={"console_scripts": ["smiles2inchikey = rdkit_wrapper.chem:main"]},
 )
